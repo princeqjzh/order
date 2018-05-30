@@ -13,7 +13,7 @@
 <body>
 	<h2>编辑菜品分类</h2>
 
-	<form action="/order/saveCategory" method = "post">
+	<form action="/saveCategory" method = "post">
 		<table border="1" cellspacing="0" cellpadding="5">
 			<tr>
 				<th>菜品分类ID</th>
@@ -27,7 +27,7 @@
 		<br>
 		<input type = "submit" value = "提交修改"/>
 		&nbsp;
-		<input type = "button" value = "取消" onclick="window.location.href='/order/showCategories'"/>
+		<input type = "button" value = "取消" onclick="window.location.href='/showCategories'"/>
 	</form>
 
 </body>

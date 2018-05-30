@@ -156,7 +156,7 @@
 								<td align="center">${menu.price}</td>
 								<td>
 									<input type = "button" value = "删除" onclick="javascript:if(confirm('确认删除${menu.mname}'))window.location.href='/delete/${menu.mid}'">
-									<input type = "button" value = "更新" onclick="window.location.href='/order/editMenu/${menu.mid}'">
+									<input type = "button" value = "更新" onclick="window.location.href='/editMenu/${menu.mid}'">
 								</td>
 							</tr>
 						</c:forEach>

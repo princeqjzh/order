@@ -18,7 +18,7 @@
 
 <body>
 	<h2>添加菜品</h2>
-	<form action="/order/saveMenu" method = "post">
+	<form action="/saveMenu" method = "post">
 		<table border="1" cellspacing="0" cellpadding="5">
 			<tr>
 				<th>菜品名称</th>
@@ -50,7 +50,7 @@
 		<br>
 		<input type = "submit" value = "添加"/>
 		&nbsp;
-		<input type = "button" value = "取消" onclick="window.location.href='/order/showMenus'"/>
+		<input type = "button" value = "取消" onclick="window.location.href='/showMenus'"/>
 	</form>
 
 </body>
