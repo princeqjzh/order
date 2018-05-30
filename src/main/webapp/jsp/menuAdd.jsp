@@ -69,7 +69,7 @@
 					<div class="page-header">
 					</div>
 						<div class="col-xs-12">
-							<form class="form-horizontal" role="form" action="/order/saveMenu" method = "post">
+							<form class="form-horizontal" role="form" action="/saveMenu" method = "post">
 								<div class="form-group">
 									<label class="col-sm-3 control-label no-padding-right" for="form-field-2"> 菜品名称 </label>
 

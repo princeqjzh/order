@@ -26,7 +26,7 @@
 	//如果ckUseCookie = on 并且当前的 currentCid 为空 则尝试提交相应的请求
 	if(ckUseCookie != null && ckUseCookie.getValue().equalsIgnoreCase("on") && currentCid == null){
 %>
-		<jsp:forward page="/order/showMenus">
+		<jsp:forward page="/showMenus">
 			<jsp:param name="useCookie" value="<%=ckUseCookie.getValue()%>"></jsp:param>
 			<jsp:param name="cid" value="<%=ckCid.getValue()%>"></jsp:param>
 		</jsp:forward>
@@ -41,7 +41,7 @@
 
 <body>
 	<h2>当前菜单</h2>
-	<form action = "/order/showMenus" method = "post">
+	<form action = "/showMenus" method = "post">
 		<b>查询：</b>
 		<select name="cid">
 			<option value="all"
@@ -66,9 +66,9 @@
 		</select>
 		<input type = "submit", value = "提交查询"/>
 		&nbsp;|&nbsp;
-		<input type = "button" value = "添加菜品" onclick="window.location.href='/order/addMenu'">
+		<input type = "button" value = "添加菜品" onclick="window.location.href='/addMenu'">
 		&nbsp;|&nbsp;
-		<input type = "button" value = "管理分类" onclick="window.location.href='/order/showCategories'">
+		<input type = "button" value = "管理分类" onclick="window.location.href='/showCategories'">
 		&nbsp;|&nbsp;
 		<input type = "checkbox" name = "useCookie"
 		<%
@@ -101,8 +101,8 @@
 				</td>
 				<td align="center">${menu.price}</td>
 				<td>
-					<input type = "button" value = "删除" onclick="javascript:if(confirm('确认删除${menu.mname}'))window.location.href='/order/delete/${menu.mid}'">
-					<input type = "button" value = "更新" onclick="window.location.href='/order/editMenu/${menu.mid}'">
+					<input type = "button" value = "删除" onclick="javascript:if(confirm('确认删除${menu.mname}'))window.location.href='/delete/${menu.mid}'">
+					<input type = "button" value = "更新" onclick="window.location.href='/editMenu/${menu.mid}'">
 				</td>
 			</tr>
 		</c:forEach>

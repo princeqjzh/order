@@ -19,7 +19,7 @@
 <body>
 	<h2>编辑菜品详情</h2>
 
-	<form action="/order/saveMenu" method = "post">
+	<form action="/saveMenu" method = "post">
 		<table border="1" cellspacing="0" cellpadding="5">
 			<tr>
 				<th>菜品ID</th>
@@ -58,7 +58,7 @@
 		<br>
 		<input type = "submit" value = "提交修改"/>
 		&nbsp;
-		<input type = "button" value = "取消" onclick="window.location.href='/order/showMenus'"/>
+		<input type = "button" value = "取消" onclick="window.location.href='/showMenus'"/>
 	</form>
 
 </body>

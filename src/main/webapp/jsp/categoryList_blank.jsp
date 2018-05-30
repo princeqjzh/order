@@ -49,9 +49,9 @@
 		onload=initAd;
 	</script>
 	<h2>菜品分类</h2>
-	<input type = "button" value = "添加菜品分类" onclick="window.location.href='/order/addCategory'">
+	<input type = "button" value = "添加菜品分类" onclick="window.location.href='/addCategory'">
 	&nbsp;|&nbsp;
-	<input type = "button" value = "返回主菜单" onclick="window.location.href='/order/showMenus'">
+	<input type = "button" value = "返回主菜单" onclick="window.location.href='/showMenus'">
 	<%
 		if(errMsg != null && !errMsg.equalsIgnoreCase("")){
 			out.println("<div id='sponsorAdDiv'><br><font color=red>" + errMsg + "</font></div>");
@@ -71,8 +71,8 @@
 				<td align="center">${category.cid}</td>
 				<td>${category.cname}</td>
 				<td>
-					<input type = "button" value = "删除" onclick="javascript:if(confirm('确认删除${category.cname}?'))window.location.href='/order/deleteCategory/${category.cid}'">
-					<input type = "button" value = "更新" onclick="window.location.href='/order/editCategory/${category.cid}'">
+					<input type = "button" value = "删除" onclick="javascript:if(confirm('确认删除${category.cname}?'))window.location.href='/deleteCategory/${category.cid}'">
+					<input type = "button" value = "更新" onclick="window.location.href='/editCategory/${category.cid}'">
 				</td>
 			</tr>
 		</c:forEach>

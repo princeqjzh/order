@@ -16,10 +16,10 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 @Controller
-@RequestMapping("/order")
 public class OrderEntryControllor {
     @Autowired
     MenuManager menuManager;
@@ -185,13 +185,14 @@ public class OrderEntryControllor {
     @RequestMapping(value = "/delete/{mid}", method = RequestMethod.GET) //按照ID展示
     public String deleteMenu(Model model,
                              @PathVariable int mid,
-                             HttpServletRequest request) {
+                             HttpServletRequest request,
+                             HttpServletResponse response) {
         menuManager.deleteMenuByMid(mid); //删除对应menu
 
         HttpSession session = request.getSession();
         model.addAttribute("menus", menuManager.getAllMenus());
         session.setAttribute("categoryManager", categoryManager);
-//        return "jsp/menuList.jsp";
+
         return "/showMenus";
     }
 
