@@ -11,6 +11,7 @@
 ### base 函数
 killTomcat()
 {
+   cd $TOMCAT_APP_PATH/
    sh bin/shutdown.sh 
 }
 cd $PROJ_PATH/order
