@@ -12,8 +12,8 @@
 	<!-- 数据源：DB连接配置 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://YourDBHost:YourDBPort/order?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
-	 	<property name="username" value="YourDBUsername" />
+		<property name="url" value="jdbc:mysql://192.168.1.111:3306/biz_db?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
+	 	<property name="root" value="pass123" />
         <property name="password" value="YourDBPassword" />
 	</bean>
 
