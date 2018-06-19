@@ -1,4 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `order`
+CREATE DATABASE  IF NOT EXISTS `order`;
 USE `order`;
 
 DROP TABLE IF EXISTS `categories`;
