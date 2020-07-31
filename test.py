@@ -1,3 +1,2 @@
 def print():
-    welcome = "hello coding!"
-    return welcome
+    return "hello coding!"
