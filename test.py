@@ -1,3 +1,3 @@
 def print():
-    print("hello coding!")
-    return "hello coding!"
+    print_test = "hello coding!"
+    return print_test
