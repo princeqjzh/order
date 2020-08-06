@@ -16,6 +16,7 @@ pipeline {
       steps {
         echo "自定义构建过程开始"
         // 请在此处补充您的构建过程
+        sh 'ls -l'
       }
     }
   }
