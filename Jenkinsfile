@@ -18,6 +18,7 @@ pipeline {
         // 请在此处补充您的构建过程
         sh 'ls -l'
         sh'echo hello coding>test.txt'
+        sh 'ls -l'
       }
     }
   }
