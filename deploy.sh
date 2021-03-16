@@ -20,7 +20,16 @@ killTomcat()
       kill -9 $pid
     fi
 }
-cd $PROJ_PATH/order
+
+#判断是从git下载还是更新
+
+if [ ! -d "$PROJ_PATH/order" ]; then
+  git clone git@github.com:Aplhabet555/order.git
+else
+  cd $PROJ_PATH/order
+  git pull
+fi
+
 mvn clean install
 
 # 停tomcat
