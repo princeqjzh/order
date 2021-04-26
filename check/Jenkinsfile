@@ -10,6 +10,7 @@ pipeline {
             url: env.GIT_REPO_URL,
             credentialsId: env.CREDENTIALS_ID
           ]]])
+          sh 'echo hello CODING'
         }
       }
     }
