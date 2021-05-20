@@ -7,10 +7,9 @@ pipeline {
           $class: 'GitSCM',
           branches: [[name: env.GIT_BUILD_REF]],
           userRemoteConfigs: [[
-                  url: env.GIT_REPO_URL,
-                  credentialsId: env.CREDENTIALS_ID
+                    url: env.GIT_REPO_URL,
+                    credentialsId: env.CREDENTIALS_ID
           ]]])
-          sh 'echo hello CODING'
           sh 'echo hello CODING'
           sh 'echo hello CODING'
         }
