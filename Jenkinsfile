@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('阶段 1-1') {
       steps {
-        sh 'echo hello CODING'
+        sh 'echo hello'
       }
     }
   }
