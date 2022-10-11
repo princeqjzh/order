@@ -20,6 +20,8 @@ killTomcat()
       kill -9 $pid
     fi
 }
+
+
 cd $PROJ_PATH/order
 mvn clean install
 
