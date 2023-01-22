@@ -12,9 +12,9 @@
 	<!-- 数据源：DB连接配置 -->
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
-		<property name="url" value="jdbc:mysql://YourDBHost:YourDBPort/order?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=UTF-8" />
-	 	<property name="username" value="YourDBUsername" />
-        <property name="password" value="YourDBPassword" />
+		<property name="url" value="jdbc:mysql://123.57.49.174:3306/order?autoReconnect=true&amp;useUnicode=true&amp;characterEncoding=utf-8&amp;useSSL=false" />
+	 	<property name="username" value="root" />
+        <property name="password" value="010Aa393" />
 	</bean>
 
 	<!-- 数据会话工厂：映射模型包-->

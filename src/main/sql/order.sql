@@ -4,7 +4,7 @@ USE `order`;
 DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `cid` int(11) NOT NULL AUTO_INCREMENT,
-  `cname` varchar(100) DEFAULT NULL,
+  `cname` varchaar(100) DEFAULT NULL,
   PRIMARY KEY (`cid`)
 ) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
