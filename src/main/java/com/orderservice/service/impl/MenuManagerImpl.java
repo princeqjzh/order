@@ -1,8 +1,8 @@
-package com.lesson.service.impl;
+package com.orderservice.service.impl;
 
-import com.lesson.model.Menu;
-import com.lesson.dao.MenuDAO;
-import com.lesson.service.MenuManager;
+import com.orderservice.model.Menu;
+import com.orderservice.dao.MenuDAO;
+import com.orderservice.service.MenuManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

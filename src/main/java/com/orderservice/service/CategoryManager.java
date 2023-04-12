@@ -1,6 +1,6 @@
-package com.lesson.service;
+package com.orderservice.service;
 
-import com.lesson.model.Category;
+import com.orderservice.model.Category;
 
 import java.util.List;
 

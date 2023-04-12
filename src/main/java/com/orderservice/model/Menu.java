@@ -1,4 +1,4 @@
-package com.lesson.model;
+package com.orderservice.model;
 
 public class Menu {
     int mid;

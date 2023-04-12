@@ -1,6 +1,6 @@
-package com.lesson.dao;
+package com.orderservice.dao;
 
-import com.lesson.model.Category;
+import com.orderservice.model.Category;
 import org.apache.ibatis.annotations.*;
 
 import java.util.List;

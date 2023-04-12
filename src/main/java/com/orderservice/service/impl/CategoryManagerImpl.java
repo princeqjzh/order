@@ -1,8 +1,8 @@
-package com.lesson.service.impl;
+package com.orderservice.service.impl;
 
-import com.lesson.dao.CategoryDAO;
-import com.lesson.model.Category;
-import com.lesson.service.CategoryManager;
+import com.orderservice.dao.CategoryDAO;
+import com.orderservice.model.Category;
+import com.orderservice.service.CategoryManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

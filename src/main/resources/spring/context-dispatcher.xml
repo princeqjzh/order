@@ -8,10 +8,10 @@
         http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<!--扫描整体程序包-->
-	<context:component-scan base-package="com.lesson.controller"/>
-	<context:component-scan base-package="com.lesson.dao"/>
-	<context:component-scan base-package="com.lesson.model"/>
-	<context:component-scan base-package="com.lesson.service"/>
+	<context:component-scan base-package="com.orderservice.controller"/>
+	<context:component-scan base-package="com.orderservice.dao"/>
+	<context:component-scan base-package="com.orderservice.model"/>
+	<context:component-scan base-package="com.orderservice.service"/>
 
 	<!--视图解析器-->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">

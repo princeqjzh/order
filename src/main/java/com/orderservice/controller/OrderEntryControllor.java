@@ -1,8 +1,8 @@
-package com.lesson.controller;
+package com.orderservice.controller;
 
-import com.lesson.model.Menu;
-import com.lesson.service.CategoryManager;
-import com.lesson.service.MenuManager;
+import com.orderservice.model.Menu;
+import com.orderservice.service.CategoryManager;
+import com.orderservice.service.MenuManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,7 +16,6 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
-import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 
 @Controller

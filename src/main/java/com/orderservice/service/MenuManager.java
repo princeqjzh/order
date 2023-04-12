@@ -1,6 +1,6 @@
-package com.lesson.service;
+package com.orderservice.service;
 
-import com.lesson.model.Menu;
+import com.orderservice.model.Menu;
 
 import java.util.List;
 

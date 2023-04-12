@@ -20,7 +20,7 @@
 	<!-- 数据会话工厂：映射模型包-->
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="typeAliasesPackage" value="com.lesson.model"/>
+		<property name="typeAliasesPackage" value="com.orderservice.model"/>
 	</bean>
 
 	<!-- 数据会话控制 -->
@@ -30,7 +30,7 @@
 
 	<!-- 映射数据mapper -->
 	<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.lesson.dao" />
+		<property name="basePackage" value="com.orderservice.dao" />
 	</bean>
 
 	<!-- 数据源事物管理器 -->

@@ -1,6 +1,6 @@
 ﻿
-<%@ page import="com.lesson.service.CategoryManager" %>
-<%@ page import="com.lesson.model.Category" %>
+<%@ page import="com.orderservice.service.CategoryManager" %>
+<%@ page import="com.orderservice.model.Category" %>
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
