@@ -9,3 +9,7 @@
    export mysql_pwd=your db password
    ```
 3. 完成配置之后能可以运行spring程序;
+   ```bash
+   mvn clean install
+   mvn tomcat7:run
+   ```
