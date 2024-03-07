@@ -16,7 +16,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                checkout scmGit(branches: [[name: "${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'hubor-cre', url: 'https://github.com/1056661516/order.git']])
+                checkout scmGit(branches: [[name: "*/${branch}"]], extensions: [], userRemoteConfigs: [[credentialsId: 'hubor-cre', url: 'https://github.com/1056661516/order.git']])
                 //git credentialsId: 'hubor-cre', url: 'https://github.com/1056661516/hellowworld.git'
             }
         }
